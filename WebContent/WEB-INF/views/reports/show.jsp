@@ -34,7 +34,7 @@
                 </table>
                 <!-- ログイン中の従業員と作成した従業員が同じ場合に編集可能に -->
                 <c:if test="${sessionScope.login_employee.id == report.employee.id}">
-                    <p><a href="<c:url value='/reports/edit' />">この日報を編集する</a></p>
+                    <p><a href="<c:url value='/reports/edit?id=${report.id}' />">この日報を編集する</a></p>
                 </c:if>
             </c:when>
             <c:otherwise>
