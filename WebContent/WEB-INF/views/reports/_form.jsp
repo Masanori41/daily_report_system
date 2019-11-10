@@ -4,7 +4,7 @@
 <c:if test="${errors != null}">
     <div id="flush_error">
         <c:forEach var="error" items="${errors}">
-            <c:out value="error" /><br />
+            <c:out value="${error}" /><br />
         </c:forEach>
     </div>
 </c:if>
